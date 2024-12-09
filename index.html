@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج الذكاء الاصطناعي المشترك</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="header-controls">
+                <button class="theme-toggle" id="themeToggle">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="4"/>
+                        <path d="M12 2v2m0 16v2M4 12H2m20 0h-2m-2.05-6.95l-1.41 1.41M5.46 5.46l-1.41-1.41m0 15.9l1.41-1.41m12.72 0l1.41 1.41"/>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9z"/>
+                    </svg>
+                    <span>الوضع الليلي</span>
+                </button>
+                <h1>نموذج الذكاء الاصطناعي المشترك</h1>
+                <div class="model-selector" id="modelSelector">
+                    <button class="model-button add-model" id="addModel">
+                        <span class="plus-icon">+</span>
+                        إضافة نموذج
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="chat-container">
+                <div class="messages-wrapper">
+                    <div class="chat-messages" id="chatMessages">
+                        <!-- Messages will be inserted here -->
+                    </div>
+                </div>
+                
+                <div class="input-wrapper">
+                    <div class="input-container">
+                        <textarea 
+                            id="userInput" 
+                            placeholder="اكتب رسالتك هنا..."
+                            rows="1"
+                        ></textarea>
+                        <button id="sendButton" class="send-button">
+                            إرسال
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal for API Key -->
+    <div class="modal" id="apiModal">
+        <div class="modal-content">
+            <h2>إدخال مفتاح API</h2>
+            <div class="modal-body">
+                <select id="modelSelect" class="model-select">
+                    <option value="gemini">Gemini</option>
+                    <option value="chatgpt">ChatGPT</option>
+                    <option value="claude">Claude</option>
+                </select>
+                <input type="password" id="apiKey" placeholder="أدخل مفتاح API" />
+                <div id="apiStatus" class="api-status"></div>
+                <div class="modal-buttons">
+                    <button id="saveApiKey" class="primary-button">حفظ</button>
+                    <button id="cancelApiKey" class="secondary-button">إلغاء</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
