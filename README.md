@@ -90,3 +90,7 @@ An advanced user interface for interacting with multiple AI models (ChatGPT, Cla
 - Clean semantic structure
 - Modular component organization
 - Responsive layout design
+
+## License 
+
+This project is licensed under the MIT License - see the LICENSE file for details.
