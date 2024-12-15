@@ -3,6 +3,7 @@
 An advanced user interface for interacting with multiple AI models (ChatGPT, Claude, Gemini) in a unified and elegant interface.
 
 ![Project Interface](images/screenshot.png)
+![Add API ](images/screenshot2.png)
 
 ## Features
 
