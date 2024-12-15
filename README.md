@@ -105,8 +105,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 واجهة متقدمة للتفاعل مع نماذج الذكاء الاصطناعي المتعددة (ChatGPT، Claude، Gemini) في واجهة موحدة وأنيقة.
 
-![واجهة المشروع](images/screenshot.png)
-![إضافة API](images/screenshot2.png)
 
 ### الميزات
 
